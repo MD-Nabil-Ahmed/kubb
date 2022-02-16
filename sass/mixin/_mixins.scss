@@ -1,0 +1,37 @@
+@mixin ts($c, $fs, $fw, $ff) {
+    color: $c;
+    font-size: $fs;
+    font-weight: $fw;
+    font-family: $ff;
+}
+
+
+@mixin after1 ($lf, $top, $h, $w, $bg) {
+    position: absolute;
+    content: '';
+    left: $lf;
+    top: $top;
+    height: $h;
+    width: $w;
+    background: $bg;
+}
+
+@mixin after2 ($lf, $top, $h, $w, $bg) {
+    position: absolute;
+    content: '';
+    left: $lf;
+    top: $top;
+    height: $h;
+    width: $w;
+    background: $bg;
+}
+
+@mixin before ($lf, $top, $h, $w, $bg) {
+    position: absolute;
+    content: '';
+    left: $lf;
+    top: $top;
+    height: $h;
+    width: $w;
+    background: $bg;
+}

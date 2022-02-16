@@ -1,0 +1,87 @@
+@import '../variables/variables';
+@import '../mixin/mixins';
+
+
+
+/*===========================================================================================================================
+                                                        footer part start
+=============================================================================================================================*/
+#footer {
+    background: #373737;
+
+    .foot_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 65px 0;
+
+        .foot_col {
+            width: 21%;
+
+            h4 {
+                @include ts(#f0f0f0, 16px, 700, $ff1);
+                margin-bottom: 15px;
+                text-transform: uppercase;
+            }
+
+            p {
+                @include ts(#cacaca, 14px, 400, $roboto);
+                line-height: 24px;
+            }
+
+            a {
+                @include ts(#cacaca, 14px, 400, $roboto);
+
+                i {
+                    margin-right: 15px;
+                    margin-top: 15px;
+                }
+            }
+
+            span {
+                display: block;
+                @include ts(#cacaca, 14px, 400, $roboto);
+                margin-left: 25px;
+                margin-top: 5px;
+            }
+
+            .p {
+                margin-bottom: 20px;
+
+                .date {
+                    margin: 5px 0 0 0;
+                    @include ts(#929292, 12px, 400, $roboto);
+                }
+            }
+
+            .p2 {
+                margin-bottom: 20px;
+
+                .date {
+                    margin: 5px 0 0 0;
+                    @include ts(#929292, 12px, 400, $roboto);
+                }
+            }
+
+            .p3 {
+                .date {
+                    margin: 5px 0 0 0;
+                    @include ts(#929292, 12px, 400, $roboto);
+                }
+            }
+        }
+    }
+
+    .foot_last {
+        padding: 40px 0;
+        background: #333;
+
+        p {
+            @include ts(#cacaca, 14px, 400, $roboto);
+        }
+    }
+}
+
+/*===========================================================================================================================
+                                                        footer part end
+=============================================================================================================================*/

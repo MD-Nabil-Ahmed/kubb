@@ -1,0 +1,73 @@
+@import '../variables/variables';
+@import '../mixin/mixins';
+
+
+/*===========================================================================================================================
+                                                        instagram part start
+=============================================================================================================================*/
+#instagram {
+    padding: 80px 0;
+    text-align: center;
+    background: #2c2c2c;
+
+    .common_head {
+        position: relative;
+
+        &::after {
+            @include after2(34%, 10px, 1px, 100px, #535353);
+        }
+
+        &::before {
+            @include before(34%, 12px, 1px, 100px, #535353);
+        }
+
+        h4 {
+            @include ts(#d5d5d5, 18px, 700, $ff1);
+            margin-bottom: 25px;
+            position: relative;
+            text-transform: uppercase;
+
+            &::after {
+                @include after2(58.7%, 10px, 1px, 100px, #535353);
+            }
+
+            &::before {
+                @include before(58.7%, 12px, 1px, 100px, #535353);
+            }
+        }
+    }
+
+
+    .instagram_img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .insta_col {
+            width: 24.2%;
+            max-width: 24.2%;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .instagram_button {
+        a {
+            padding: 18px 20px;
+            border: 1px solid #797979;
+            margin-top: 40px;
+            @include ts(#a6a6a6, 14px, 400, $roboto);
+
+            i {
+                margin-right: 7px;
+            }
+        }
+    }
+}
+
+/*===========================================================================================================================
+                                                        instagram part end
+=============================================================================================================================*/
